@@ -3,7 +3,7 @@ let passport = {
 	surname: "Petrov",
 };
 
-let passport2 = JSON.parse(JSON.stringify(passport))
+let passport2 = Object.assign({}, passport)
 passport2.name = 'Ivan'
 
 console.log(passport);
